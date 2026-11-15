@@ -1,0 +1,10 @@
+[project]
+name = "SVIX Crash Monitor History"
+description = "Daily derived SVIX and option-implied downside risk measures from FINM 32800 HW3."
+
+[dataframes.svix_monitor_history]
+name = "Daily SVIX Monitor History"
+description = "Trading-session observations of SVIX and option-implied downside risk."
+path = "svix_monitor_history.csv"
+date_col = "date"
+docs = "The daily workflow records one row per trading session. The p_star_10 and p_star_20 columns give risk-neutral probabilities for declines of at least 10 and 20 percent at the expiry represented by days_used."
